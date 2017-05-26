@@ -1,0 +1,74 @@
+/*
+Colors to use:
+dark blue: #06365f
+light blue: #1c5380
+*/
+
+body {
+  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-image: url("../images/bgtile.png"); /* yea, just like the eCardly homework */
+  background-repeat: repeat-x;
+  display: flex;                /* just to start */
+  flex-wrap: wrap;          /* so the ul wraps around to the bottom of the page */
+  padding: 2%;
+  justify-content: center; /* the main 2 divs are centered */
+  padding-top: 6%;          /* gave it room to breath on top*/
+}
+#phone{
+    margin-right: 5%;  /* Space in btwn the divs that are centered */
+}
+#container{  /* this contains my Instagram logo, and the text. so that the screen is 2 main divs, and the ul under*/
+    display: flex;
+    flex-direction: column;
+}
+#brand{             /* the size is the natural size of the image. */
+    width: 314px;
+    height: 78px;
+    margin-bottom: 5%;
+}
+#content{ /* I sized it based on the background image, and gave it some padding to breath */
+    padding: 8.5%;
+    background-image: url("../images/frame.png");
+    background-size: cover;
+    max-width: 515px;
+    height: 284px;
+}
+.cap{ /* this is the text in the #content  */
+    color: #06365f;
+    margin: 0;
+}
+
+.bold{ /* details */
+    font-weight: bold;
+}
+#footer{
+    list-style: none;
+    margin-top: 5%;
+}
+.bottom{
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 5px;
+}
+.links{
+    color: #1c5380;
+}
+.copy{
+    color: gray;
+}
+#dl{
+    display: flex;
+    justify-content: center;
+}
+#app{
+    margin-right: 7px;
+}
+
+/* not sure why the thing doesnt work below */
+
+@media screen and (max-width: 914px;){
+    #phone{
+        display: none;
+    }
+}
